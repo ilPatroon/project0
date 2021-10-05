@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="style.css" />
         <title>Search images</title>
     </head>
     <body>
-        <a href="file:///Users/genaro/Desktop/Curso%20Harvard/repositorio/project0/index.html">back</a><br>
+        <div class="header">
+            <div class="header-links">
+                <a href="img_search.html"> Google Images</a>
+                <a href="advanced_search.html">Google Advanced Search</a>
+            </div>
+        </div>
+
+        <a href="index.html">back</a><br>
         <form action="https://google.com/search">
-            <IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A><br>
-            <input type="text" name="q"><br>
+          
+<!-- SEARCH CONTAINER START -->
+<div class="search-container">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+    <div class="logo-subtext">
+        <span>images</span>
+    </div>
+    <form action="https://www.google.com/search" method="get">
+        <div class="search-field">
+            <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5" /><path d="m17.571 17.5-5.571-5.5" /></g></svg>
+            <input type="text" name="q" style="width: 487px;">
+        </div>
+        
             <input type="hidden" id="img" name="sclient" value="img">
             <input type="hidden" id="tbm" name="tbm" value="isch">
-            <input type="submit" value="Google search images">
+        <input type="submit" value="Google search images">
+    </form>
+</div>
+<!-- SEARCH CONTAINER END -->
         </form>
     </body>
 </html>

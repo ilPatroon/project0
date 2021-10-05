@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
+        <link rel="stylesheet" href="style.css" />
         <title>Search</title>
     </head>
     <body>
-        <a href="file:///Users/genaro/Desktop/Curso%20Harvard/repositorio/project0/img_search.html">images</a>
-        <a href="file:///Users/genaro/Desktop/Curso%20Harvard/repositorio/project0/advanced_search.html">advanced search</a>
+            <!-- HEADER INICIO -->
+    <div class="header">
+        <div class="header-links">
+            <a href="img_search.html"> Google Images</a>
+            <a href="advanced_search.html">Google Advanced Search</a>
+        </div>
+    </div>
+    <!-- HEADER FIN -->
+    <!-- SEARCH CONTAINER INICIO -->
+    <div class="search-container">
         <form action="https://google.com/search">
-            <IMG SRC="http://www.google.com/logos/Logo_40wht.gif" border="0" ALT="Google" align="absmiddle"></A><br>
-            <input type="text" name="q"/><br>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" style="margin-left: 135px;"/>
+            
+            <div class="search-field">
+            <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5" /><path d="m17.571 17.5-5.571-5.5" /></g></svg>
+            <input type="text" name="q" style="width: 487px;"/><br>
+            </div>
             <input type="submit" value="Google Search">
-            <input name="btnI" type="submit" value="I m Feeling Lucky" class="button" data-ved="0ahUKEwja87r0nMvqAhWOmuAKHSbxAeIQnRsIDQ">
-            <input value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" id="lucky" name="btnI" type="submit" data-ved="0ahUKEwja87r0nMvqAhWOmuAKHSbxAeIQnRsIDQ"> 
+            <input name="btnI" type="submit" value="I m Feeling Lucky">
         </form>
+    </div>
+    <!-- SEARCH CONTAINER FIN -->
     </body>
 </html>
